@@ -1,0 +1,9 @@
+services:
+  reduct-storage:
+    image: reductstorage/engine:v1.0.1
+    volumes:
+      - ./data:/data
+    environment:
+      RS_LOG_LEVEL: DEBUG
+    ports:
+      - 8383:8383
